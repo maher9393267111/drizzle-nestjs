@@ -1,6 +1,6 @@
 import { registerAs } from '@nestjs/config';
 
 export const DbConfig = registerAs('db', () => ({
-  prodBranchUrl: process.env.PROD_BRANCH_URL,
-  devBranchUrl: process.env.DEV_BRANCH_URL,
+  prodBranchUrl: 'mysql://admin:UfntxUEd@mysql-133270-0.cloudclusters.net:15439/new',
+  devBranchUrl: 'mysql://admin:UfntxUEd@mysql-133270-0.cloudclusters.net:15439/new',
 }));

@@ -17,7 +17,7 @@ export const DbProvider: FactoryProvider = {
     logger.debug('Connecting to PlanetScale...');
 
     const connection = mysql.createPool({
-      uri: 'mysql://admin:UfntxUEd@mysql-133270-0.cloudclusters.net:15439/new',
+      uri: dbConfig.prodBranchUrl,
       multipleStatements: true,
       waitForConnections: true,
       connectionLimit: 10,
