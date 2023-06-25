@@ -9,6 +9,7 @@ export class NoteService {
 
 
   
+
   async list(): Promise<Note[]> {
     return this.db.select().from(notes).orderBy(desc(notes.createdAt));
   }
