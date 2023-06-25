@@ -1,8 +1,8 @@
 import { Global, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { DbConfig } from '@/config';
-import { NoteModule } from '@/note/note.module';
-import { GlobalModule } from '@/global/global.module';
+import { DbConfig } from './config';
+import { NoteModule } from './note/note.module';
+import { GlobalModule } from './global/global.module';
 
 @Global()
 @Module({

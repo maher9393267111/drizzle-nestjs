@@ -1,6 +1,6 @@
 import { FactoryProvider, Logger } from '@nestjs/common';
 import { ConfigType } from '@nestjs/config';
-import { DbConfig } from '@/config';
+import { DbConfig } from '../../config';
 import { DefaultLogger, LogWriter } from 'drizzle-orm';
 import { drizzle, MySql2Database } from 'drizzle-orm/mysql2';
 import * as mysql from 'mysql2/promise';

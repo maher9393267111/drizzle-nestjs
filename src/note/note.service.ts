@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { DB, DbType } from '@/global/providers/db.provider';
-import { notes, NewNote, Note } from '@/_schemas/notes';
+import { DB, DbType } from '../global/providers/db.provider';
+import { notes, NewNote, Note } from '../_schemas/notes';
 import { desc, eq } from 'drizzle-orm';
 
 @Injectable()
@@ -8,7 +8,7 @@ export class NoteService {
   constructor(@Inject(DB) private readonly db: DbType) {}
 
 
-  
+
 
   async list(): Promise<Note[]> {
     return this.db.select().from(notes).orderBy(desc(notes.createdAt));
