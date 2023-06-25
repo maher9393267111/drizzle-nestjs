@@ -16,6 +16,7 @@ export const notes = mysqlTable('notes', {
 });
 
 
+
 export const posts2 = mysqlTable('posts2', {
   id: serial('id').primaryKey(),
   title: varchar('title', { length: 255 }).default('').notNull(),
