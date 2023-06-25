@@ -9,7 +9,7 @@ import { GlobalModule } from '@/global/global.module';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      load: [DbConfig],
+      //load: [DbConfig],
     }),
     GlobalModule,
     NoteModule,
